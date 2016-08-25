@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BMF</string>
+    <string name="btn_toilet">शौचालय का</string>
+    <string name="btn_ramp">रैम्प का</string>
+    <string name="btn_water">पानी की सुविधा का</string>
+    <string name="btn_elec">बिजली व्यवस्थ की</string>
+    <string name="btn_telephone">टेलीफोन का</string>
+    <string name="btn_door">प्रवेश द्वार  का</string>
+    <string name="btn_fur">फर्नीचर का  </string>
+    <string name="shade_pic">टीन छाया की</string>
+    <string name="bool">true</string>
+    <string name="title_activity_login_form">Login_form</string>
+    <string name="take_pic">फोटो लें</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="AC"> विधानसभा :</string>
+    <string name="PS"> पोलिंग स्टेशन :</string>
+    <string name="district">जिला :</string>
+    <string name="btn_send">Login</string>
+    <string name="view_name">Name</string>
+    <string name="view_desig">Designation</string>
+    <string name="view_mob">Mobile</string>
+    <string name="view_Dis">District</string>
+    <string name="view_ac">Assembly</string>
+    <string name="view_polling">Polling Station</string>
+    <string name="VoterName">Name:</string>
+    <string name="FatherName">Father Name:</string>
+    <string name="VoterAge">Age:</string>
+    <string name="VoterGender">Gender:</string>
+
+</resources>

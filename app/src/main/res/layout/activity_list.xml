@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cybercell.bms_upload_pic.SuccessActivity"
+    android:background="@drawable/bg_messages">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:text="@string/VoterName"
+                android:textColor="#000000"
+                android:id="@+id/voter_name"/>
+            <!--android:textSize="@dimen/txtsize"-->
+            <!--android:textStyle="bold|italic"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text=""
+                android:id="@+id/voter_name1" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:text="@string/FatherName"
+                android:layout_marginTop="20dp"
+                android:textColor="#000000"
+
+                android:id="@+id/FnName"/>
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="@dimen/txtsize"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text=""
+                android:id="@+id/FnName1" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VoterAge"
+
+                android:layout_marginTop="20dp"
+
+                android:id="@+id/voter_age"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"/>
+            <!--android:textSize="@dimen/txtsize"-->
+            <!--android:textStyle="bold"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text=""
+                android:id="@+id/voter_age1" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VoterGender"
+
+                android:layout_marginTop="20dp"
+
+                android:id="@+id/voter_gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"/>
+            <!--android:textSize="@dimen/txtsize"-->
+            <!--android:textStyle="bold"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text=""
+                android:id="@+id/voter_gender1" />
+        </TableRow>
+    </TableLayout>
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/checkBox2"
+        android:textAlignment="viewStart"
+        android:checked="false"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        tools:text="I hereby accept that details provided are correct and verified by me." />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp">
+
+        <Button
+            android:id="@+id/btn_chkrep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="79dp"
+            android:background="@color/colorAccent"
+            android:elevation="14dp"
+            android:onClick="getresult1"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+
+        <!--android:textStyle="bold|italic"-->
+        <!--android:textSize="15dp"-->
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+

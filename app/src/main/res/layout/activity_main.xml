@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.cybercell.bms_upload_pic.MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f7f7e0">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativedetails">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:id="@+id/tableLayout">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="जिला:"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/textView3" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=""
+                        android:textStyle="italic"
+                        android:id="@+id/txt_dis" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=" विधानसभा:"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="#000"
+                        android:id="@+id/textViewac"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=""
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="italic"
+                        android:id="@+id/txt_ac" />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=" PS:"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="#000"
+                        android:id="@+id/textViewps"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=""
+                        android:textStyle="italic"
+                        android:id="@+id/txt_pollings" />
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativedetails"
+            android:id="@+id/relaytivelayout_toilet"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_relative"
+            android:layout_marginTop="20dp" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/btn_toilet"
+
+                    android:id="@+id/lbl_toilet"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/pic_toilet"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@mipmap/empty_image"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/take_pic"
+                    android:id="@+id/txt_take_pic_toilet"
+                    android:textSize="@dimen/txtsize"
+                    android:layout_alignTop="@+id/lbl_toilet"
+                    android:layout_toLeftOf="@+id/pic_toilet"
+                    android:layout_toStartOf="@+id/pic_toilet"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginEnd="39dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_below="@+id/relaytivelayout_toilet"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout2"
+            android:background="@drawable/border_relative"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/btn_water"
+                    android:id="@+id/lbl_water"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/pic_water"
+                    android:background="@mipmap/empty_image"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/take_pic"
+                    android:id="@+id/txt_take_pic_water"
+                    android:textSize="15dp"
+                    android:layout_alignTop="@+id/lbl_water"
+                    android:layout_toLeftOf="@+id/pic_water"
+                    android:layout_toStartOf="@+id/pic_water"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginEnd="39dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout3"
+            android:background="@drawable/border_relative"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/btn_telephone"
+                    android:id="@+id/lbl_telephone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/pic_telephone"
+                    android:clickable="true"
+                    android:background="@mipmap/empty_image"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/take_pic"
+                    android:id="@+id/txt_take_pic_telephone"
+                    android:textSize="@dimen/txtsize"
+                    android:layout_alignTop="@+id/lbl_telephone"
+                    android:layout_toLeftOf="@+id/pic_telephone"
+                    android:layout_toStartOf="@+id/pic_telephone"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginEnd="39dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout4"
+            android:background="@drawable/border_relative"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/lbl_electricity"
+                    android:text="बिजली व्यवस्था का"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/pic_electric"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@mipmap/empty_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/take_pic"
+                    android:id="@+id/txt_take_pic_electric"
+                    android:textSize="@dimen/txtsize"
+                    android:layout_alignTop="@+id/lbl_electricity"
+                    android:layout_toLeftOf="@+id/pic_electric"
+                    android:layout_toStartOf="@+id/pic_electric"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginEnd="39dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout5"
+            android:background="@drawable/border_relative"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/btn_ramp"
+                    android:id="@+id/lbl_ramp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/pic_ramp"
+                    android:background="@mipmap/empty_image"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/take_pic"
+                    android:id="@+id/txt_take_pic_ramp"
+                    android:textSize="@dimen/txtsize"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginEnd="41dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_alignBottom="@+id/lbl_ramp"
+                    android:layout_toLeftOf="@+id/pic_ramp"
+                    android:layout_toStartOf="@+id/pic_ramp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_below="@+id/relativeLayout5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout6"
+            android:background="@drawable/border_relative"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/btn_fur"
+                    android:id="@+id/lbl_furniture"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/pic_furniture"
+                    android:background="@mipmap/empty_image"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/take_pic"
+                    android:id="@+id/txt_take_pic_furniture"
+                    android:textSize="@dimen/txtsize"
+                    android:layout_alignTop="@+id/lbl_furniture"
+                    android:layout_toLeftOf="@+id/pic_furniture"
+                    android:layout_toStartOf="@+id/pic_furniture"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginEnd="39dp"
+                    android:linksClickable="true"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_below="@+id/relativeLayout6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout7"
+            android:background="@drawable/border_relative"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/shade_pic"
+                    android:id="@+id/lbl_shade_teen"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/pic_shade_teen"
+                    android:background="@mipmap/empty_image"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/take_pic"
+                    android:id="@+id/txt_take_pic_shade_teen"
+                    android:textSize="@dimen/txtsize"
+                    android:layout_alignTop="@+id/lbl_shade_teen"
+                    android:layout_toLeftOf="@+id/pic_shade_teen"
+                    android:layout_toStartOf="@+id/pic_shade_teen"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginEnd="39dp"
+                    android:linksClickable="true"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/relativeLayout7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/relativeLayout8">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Upload"
+                    android:textStyle="bold|italic"
+                    android:textSize="20dp"
+                    android:id="@+id/btn_upload"
+                    android:background="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
