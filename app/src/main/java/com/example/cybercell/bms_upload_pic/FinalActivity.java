@@ -32,7 +32,7 @@ class final_activity extends Activity{
         name = (TextView) findViewById(R.id.voter_name1);
         age1 = (TextView) findViewById(R.id.voter_age1);
         sex1 = (TextView) findViewById(R.id.voter_gender1);
-        proid2=getIntent().getExtras().getString("arg");
+        proid2=getIntent().getExtras().getString("proid1");
         NewList newList = new NewList();
         newList.execute("");
 
