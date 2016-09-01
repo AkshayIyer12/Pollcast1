@@ -52,8 +52,8 @@ public class SuccessActivity extends AppCompatActivity implements AdapterView.On
         // Get district Code from session
         HashMap<String, String> user = session.getDistrict();
         // Get district Code
-        Vdis = user.get(session.KEY_DISID);
-        dis.setText(user.get(session.KEY_DISNAME)+" ("+user.get(session.KEY_DISID)+")");
+        Vdis = user.get(SessionManagement.KEY_DISID);
+        dis.setText(user.get(SessionManagement.KEY_DISNAME) + " (" + user.get(SessionManagement.KEY_DISID) + ")");
         binddistrictgetassembly(Vdis);
     }
 

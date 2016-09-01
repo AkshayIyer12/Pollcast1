@@ -106,15 +106,15 @@ private static final String URL = "http://164.100.180.82/mobpdms/demoservice.asm
         // Get district Name from session
         HashMap<String, String> user = session.getDistrict();
 
-        districtname.setText(user.get(session.KEY_DISNAME)+" ("+user.get(session.KEY_DISID)+")");
-        dis_code=user.get(session.KEY_DISID);
+        districtname.setText(user.get(SessionManagement.KEY_DISNAME) + " (" + user.get(SessionManagement.KEY_DISID) + ")");
+        dis_code = user.get(SessionManagement.KEY_DISID);
         // Get PS and AC Name from session
 
         HashMap<String,String> acps=session.getACPS();
-        acname.setText(acps.get(session.KEY_ACNAME));
-        psname.setText(acps.get(session.KEY_PSNAME));
-        ac_code=acps.get(session.KEY_ACID);
-        ps_code=acps.get(session.KEY_PSID);
+        acname.setText(acps.get(SessionManagement.KEY_ACNAME));
+        psname.setText(acps.get(SessionManagement.KEY_PSNAME));
+        ac_code = acps.get(SessionManagement.KEY_ACID);
+        ps_code = acps.get(SessionManagement.KEY_PSID);
 
       /*  pic_toilet.setOnClickListener(new View.OnClickListener() {
             @Override

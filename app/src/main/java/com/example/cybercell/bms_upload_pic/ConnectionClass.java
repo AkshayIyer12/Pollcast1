@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionClass {
-    String ip = "10.135.30.111";
+    String ip = "10.135.30.245";
     String classs = "net.sourceforge.jtds.jdbc.Driver";
     String db = "voterapp";
     String un = "akshay1202";
@@ -25,7 +25,7 @@ public class ConnectionClass {
         try {
 
             Class.forName(classs);
-            ConnURL = "jdbc:jtds:sqlserver://" + ip + ";" + "databaseName=" + db + ";user=sa;password=nic;";
+            ConnURL = "jdbc:jtds:sqlserver://" + ip + ";databaseName=" + db + ";user=sa;password=sql123;";
             conn = DriverManager.getConnection(ConnURL);
         } catch (SQLException se) {
             Log.e("ERRO", se.getMessage());

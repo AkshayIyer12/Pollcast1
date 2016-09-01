@@ -91,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
         final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
                 R.style.AppTheme);
         progressDialog.setIndeterminate(true);
-        progressDialog.show(LoginActivity.this, "",
+        ProgressDialog.show(LoginActivity.this, "",
                 "Authenticating...", true);
         Intent intent=new Intent(this,SuccessActivity.class);
         //progressDialog.getProgress();

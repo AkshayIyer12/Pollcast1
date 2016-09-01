@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
@@ -25,8 +24,8 @@ public class SLNOINPART extends Activity {
 
     ConnectionClass connectionClass;
     ListView lstpro;
-    String proid, proid1, idiom;
-    ProgressBar pbbar;
+    String proid, idiom;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +34,7 @@ public class SLNOINPART extends Activity {
         connectionClass = new ConnectionClass();
         lstpro = (ListView) findViewById(R.id.mobile_list);
         proid = "";
-        proid1 = "";
-        idiom="Success";
+        idiom = "Success in sending PROID";
 
         FillList fillList = new FillList();
         fillList.execute("");
@@ -46,12 +44,10 @@ public class SLNOINPART extends Activity {
 
             List<Map<String, String>> prolist = new ArrayList<Map<String, String>>();
 
-            private int lsttemplate;
-
             @Override
             protected void onPreExecute() {
 
-                 pbbar.setVisibility(View.VISIBLE);
+                //pbbar.setVisibility(View.VISIBLE);
             }
 
 
@@ -69,8 +65,6 @@ public class SLNOINPART extends Activity {
                         prolist, R.layout.lsttemplate, from,
                         views);
                 lstpro.setAdapter(ADA);
-
-
                 lstpro.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                     @Override
@@ -78,11 +72,11 @@ public class SLNOINPART extends Activity {
                                             int arg2, long arg3) {
                         HashMap<String, Object> obj = (HashMap<String, Object>) ADA
                                 .getItem(arg2);
-                        proid1 = (String) obj.get("A");
+                        proid = (String) obj.get("A");
 
-                        Toast.makeText(getApplicationContext(),"SLNOINPART selected is " + proid1,Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "SLNOINPART selected is " + proid, Toast.LENGTH_LONG).show();
                         Intent i = new Intent(SLNOINPART.this, final_activity.class);
-                        i.putExtra("proid1", idiom);
+                        i.putExtra(proid, idiom);
                         startActivity(i);
                     }
                 });
